@@ -32,7 +32,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;  
 }
 header h1{
     font-style: normal;
@@ -52,6 +52,16 @@ header ul {
     font-weight: 700;
     font-size: 1.8em; 
 }
+header img{
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+#menu-mobile{
+    display: none;
+    
+}
 
 /*------ first header ------*/
 .first-header{
@@ -61,6 +71,7 @@ header ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 84px;
 }
 .first-header h1{
     font-style: normal;
@@ -92,15 +103,22 @@ header ul {
     flex-direction: row;
     align-items:flex-end;
     justify-content: space-around;
+    margin-top: 84px;
 }
 .who-we-are h2{
     font-style: normal;
     font-weight: 700;
     font-size: 4.8em;
     color: var(--text-color-background);
-    padding-left: 8px;
-    border-left: 7px solid var(--text-color-background);
     margin-bottom: 42px;
+}
+.who-we-are h2::before{
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 40px;
+    background-color: var(--text-color-background);
+    margin-right: 8px;
 }
 .who-we-are p{
     font-style: normal;

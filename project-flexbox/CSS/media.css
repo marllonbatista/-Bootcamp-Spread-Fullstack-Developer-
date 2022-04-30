@@ -1,0 +1,134 @@
+@media screen and ( max-width:1182px ) {
+    /*------ plans section ------*/
+    .plans-section{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plans-section .plans-container{
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+        margin-top: 40px;
+    }
+    #plans1,#plans2,#plans3{
+        border: 7px solid var(--text-color-background);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1180px){
+    .first-header img, .who-we-are img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:990px) {
+    /*------ first header and  section who we are ------*/
+    .first-header img, .who-we-are img{
+        display: none;
+    }
+
+    .first-header{
+        display: flex;
+        margin-top: 84px;
+        justify-content: center;
+    }
+    .first-header h1, .first-header p{
+        text-align: center;
+    }
+    #mobile{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .who-we-are{
+        display: flex;
+        justify-content: center;
+        margin-top: 84px;
+    }
+    .who-we-are h2,.who-we-are p{
+        text-align: center;
+        width: 100%;
+    }
+    /*------services section ------*/
+    .services{
+        width: 100%;
+        margin: 94px 0 104px 0;
+        background-color: var(--text-color-background);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 84px;
+    }
+    #hospedagens-container,#viagens-containner{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:770px){
+        /*------ menu ------*/
+        header ul{
+            display: none;
+        }
+        header #open-menu {
+            display:flex;
+        }
+        #menu-mobile{
+            height: 0;
+            transition: 0.5s ease-in;
+            display: inline-block;
+            position: absolute;
+            background-color:rgb(18, 42, 87);
+            width: 100%;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+        #menu-mobile.active{
+            visibility:visible;
+            height:100vh;
+        }
+        #cabecalho.active #open-menu{
+            display: none;
+        }
+        #cabecalho.active #close-menu{
+            display: flex;
+        }
+
+        #menu-mobile ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+    #menu-mobile ul li{
+        margin-bottom: 40px;
+        padding-bottom: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid rgba(31, 13, 13, 0.2);   
+         
+    }
+    #menu-mobile ul li a{
+        color: #fff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3em; 
+    }
+    /*------ footer ------*/
+    footer{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding-bottom: 2px;
+    }
+}

@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Turismos</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
      <!-- ------ menu ------ -->
-    <header>
+    <header id="cabecalho">
         <h1>FlexTurismos</h1>
         <ul>
             <li><a href="#who-we-are">Quem  Somos</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#plans-section">Planos</a></li>
         </ul>
+        <img id="open-menu" src="./images/dots-menu.png" alt=" ícone menu de pontos">
+        <img id="close-menu" src="./images/menu x.png" alt="ícone de menu x">
     </header>
+     <!-- ------ menu mobile ------ -->
+    <div id="menu-mobile">
+        <ul>
+            <li><a href="#who-we-are">Quem  Somos</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#plans-section">Planos</a></li>
+        </ul>
+    </div>
     <!-- ------ first header ------ -->
     <div class="first-header">
-        <div>
+        <div id="mobile">
             <h1>Flex <br>Turismos</h1>
             <p>O melhor serviço para você!</p>
             <a href="#">Saiba mais!</a>
@@ -120,5 +131,6 @@
         <p>&copy; 2021 CSS Flexbox</p>
         <p>Desenvolvido por:<strong> Marllon Batista</strong></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
