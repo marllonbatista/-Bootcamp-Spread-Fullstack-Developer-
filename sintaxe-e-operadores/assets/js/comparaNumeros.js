@@ -38,19 +38,19 @@ function igual(soma,NUMBER1,NUMBER2){
 }
 function diferente(soma,NUMBER1,NUMBER2){
     if(soma==10){
-        frase=`Os números ${NUMBER1} e ${NUMBER2} são diferentes. Sua soma é ${soma}, menor que 20.`;
+        frase=`Os números ${NUMBER1} e ${NUMBER2} não são iguais. Sua soma é ${soma}, menor que 20.`;
 
     }else if(soma==20){
-        frase=`Os números ${NUMBER1} e ${NUMBER2} são diferentes. Sua soma é ${soma}, maior que 10.`;
+        frase=`Os números ${NUMBER1} e ${NUMBER2} não são iguais. Sua soma é ${soma}, maior que 10.`;
     } 
     else if(soma<10){
-        frase=`Os números ${NUMBER1} e ${NUMBER2} são diferentes. Sua soma é ${soma}, que é menor que 10 e menor que 20.`;
+        frase=`Os números ${NUMBER1} e ${NUMBER2} não são iguais. Sua soma é ${soma}, que é menor que 10 e menor que 20.`;
 
     }else if(soma<20){
-        frase=`Os números ${NUMBER1} e ${NUMBER2} são diferentes. Sua soma é ${soma}, que é maior que 10 e menor que 20.`;
+        frase=`Os números ${NUMBER1} e ${NUMBER2} não são iguais. Sua soma é ${soma}, que é maior que 10 e menor que 20.`;
 
     }else {
-        frase=`Os números ${NUMBER1} e ${NUMBER2} são diferentes. Sua soma é ${soma}, que é maior que 10 e maior que 20.`;
+        frase=`Os números ${NUMBER1} e ${NUMBER2} não são iguais. Sua soma é ${soma}, que é maior que 10 e maior que 20.`;
     }
     TEXT.innerHTML=frase;
 }
