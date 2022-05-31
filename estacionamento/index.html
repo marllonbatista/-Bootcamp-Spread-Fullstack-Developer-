@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estacionamento</title>
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <form id="form">
+        <fieldset>
+            <label for="nome">Digite o nome da marca do veículo</label>
+            <input id="nome" type="text" placeholder="Digite o nome da marca do veículo" required>
+
+            <label for="placa">Digite a placa do veículo</label>
+            <input id="placa" type="text" placeholder="Digite a placa do veículo" required>
+
+            <button id="btn-cadastrar">Cadastrar</button>
+        </fieldset>
+    </form>
     
+    <table>
+        <thead>
+            <tr>
+                <th>Veículo</th>
+                <th>Placa</th>
+                <th>Horário de Entrada</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody id="patio"></tbody>
+    </table>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
